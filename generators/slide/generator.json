@@ -1,0 +1,11 @@
+{
+    "files": [{
+        "from": "slide.html.hbs",
+        "to": "app/slides/{{name}}/{{name}}.html"
+    }],
+
+    "dependencies": [{
+        "name": "view_test",
+        "params": "{{name}}"
+    }]
+}

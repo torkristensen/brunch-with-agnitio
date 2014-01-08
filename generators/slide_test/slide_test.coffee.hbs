@@ -1,0 +1,6 @@
+describe '{{name}}, ->
+    beforeEach ->
+        app.goTo('{{name}}')
+
+    it 'should exist', ->
+        expect(app.currentslide).to.equal '{{name}}'
