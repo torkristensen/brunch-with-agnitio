@@ -1,6 +1,6 @@
 {
     "files": [{
-        "from": "view_test.coffee.hbs",
+        "from": "slide_test.coffee.hbs",
         "to": "test/slides/slide_{{name}}_test.coffee"
     }],
 

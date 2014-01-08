@@ -5,7 +5,7 @@
     }],
 
     "dependencies": [{
-        "name": "view_test",
+        "name": "slide_test",
         "params": "{{name}}"
     }]
 }
