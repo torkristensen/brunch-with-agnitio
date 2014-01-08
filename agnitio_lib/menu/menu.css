@@ -1,0 +1,53 @@
+#mainmenu{
+	top: 0;
+	height: 61px;
+	z-index: 5;
+	background: #e3e3e3;
+	-webkit-transition: -webkit-transform 100ms linear;
+	-webkit-user-select: none;
+	-webkit-transform: translate3d(0, -100%, 0);
+}
+#mainmenu.visible{
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#mainmenu > .scroll-container button{
+	float: left;
+	position: relative;
+	width: 158px;
+	height: 61px;
+	margin-right: 1px;
+	border-right: 1px solid #d9d9d9;
+	box-shadow: inset 1px 0px 1px rgba(255, 255, 255, 0.6);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#e8e8e8));
+	font: bold 15px BryantPro;
+	color: #231f20;
+	z-index: 3;
+}
+#mainmenu > .scroll-container{
+	float: left;
+	width: auto;
+	height: inherit;
+	white-space: nowrap;
+	background-color: #e3e3e3;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#mainmenu > .scroll-container button.active{
+	background: #ffffff;
+	color: #ec008c;
+	z-index: 5;
+	box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.6);
+	background: url('../../content/img/menu/menu-active-button.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+#mainmenu > .scroll-container button[data-slideshow="front_page"]{
+	width: 65px;
+	color: transparent;
+	background: url('../../content/img/menu/home-icon.png') no-repeat center center,
+		-webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#e8e8e8));
+	background-size: 26px 23px, auto auto;
+}
+#mainmenu > .scroll-container button[data-slideshow="front_page"].active{
+	background: url('../../content/img/menu/home-icon.png') no-repeat center center,
+		url('../../content/img/menu/menu-active-button.jpg') no-repeat;
+	background-size: 26px 23px, 100% 100%;
+}

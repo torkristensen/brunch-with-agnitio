@@ -1,0 +1,76 @@
+#thumbs{
+	position: absolute;
+	height: 683px;
+	bottom: 0;
+	background-color: #ebeced;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#thumbs:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+#thumbs .scroll-container{
+	float: left;
+	position: relative;
+	margin-right: 1px;
+	white-space: nowrap;
+	height: 100%;
+	overflow: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#thumbs [data-slideshow]{
+	float: left;
+	position: relative;
+	margin-right: 1px;
+	width: 158px;
+	height: 100%;
+}
+#thumbs [data-slideshow]:nth-child(2){
+	opacity: 0;
+	pointer-events: none;
+	width: 65px;
+}
+#thumbs [data-slideshow].active{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#thumbs [data-slideshow]:after,
+#thumbs [data-slideshow]:before{
+	display: none;
+	position: absolute;
+	left: 50%;
+	width: 1px;
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;
+	content: "";
+	-webkit-transform: translateX(-50%);
+	z-index: 1;
+}
+
+#thumbs [data-slideshow]:after{
+	bottom: 5px;
+	border-top: 15px solid #c3c3c3;
+}
+#thumbs [data-slideshow]:before{
+	top: 5px;
+	border-bottom: 15px solid #c3c3c3;
+}
+
+#thumbs [data-slideshow].overflow-down:after,
+#thumbs [data-slideshow].overflow-up:before{
+	display: block;
+}
+#thumbs button{
+	width: 100%;
+}
+#thumbs button.active{
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f01898), color-stop(0.5, #fe72c5), to(#f01898));
+}
+#thumbs img{
+	margin: 8px auto;
+	width: 134px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#mainmenu.thumbs-opened > button{
+	background-color: #ebeced;
+}

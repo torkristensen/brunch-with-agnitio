@@ -1,0 +1,119 @@
+#timelineNavigation{
+	width: 277px;
+	height: 768px;
+	background: url(../../content/img/timeline/chapter-nav.png) 0 0 no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	display: -webkit-box;
+	box-sizing: border-box;
+	-webkit-box-pack: justify;
+	-webkit-box-orient: vertical;
+	padding: 69px 0 89px 0;
+	-webkit-transform: translate3d(-277px, 0, 0);
+}
+#timelineNavigation.open{
+	-webkit-transition: 300ms linear;
+	-webkit-transform: translate3d(0, 0, 0);	
+}
+#timelineNavigation button{
+	height: 54px;
+	background: #f6f5f6;
+	font: normal 18px/22px BryantPro;
+	color: #7a7a7a;
+	text-align: right;
+	box-sizing: border-box;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
+	border-radius: 4px;
+	position: relative;
+	padding-right: 11px;
+}
+#timelineNavigation button.active{
+	font-weight: 500;
+	color: white;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f7c7de), to(#ed4ea1));
+	box-shadow: -1px 1px 2px #d95aa6, inset 1px 0 2px white, 0 -1px 1px #f6a8ca;
+}
+#timelineNavigation button.jaydess.active{
+	background: url(../../content/img/timeline/home.png) 5px 4px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#f7c7de), to(#ed4ea1));
+	background-size: 53px auto, 100%;
+}
+#timelineNavigation button .pointer{
+	display: block;
+	position: absolute;
+	top: 11px;
+	right: -41px;
+	width: 32px;
+	height: 32px;
+	background: -webkit-gradient(linear, left top, right top, from(#c8cbd1), color-stop(50%,#ffffff), to(#c8cbd1));
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	border-radius: 16px;
+}
+#timelineNavigation button .pointer::before{
+	content: '';
+	background: #dadbde;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 26px;
+	height: 26px;
+	border-radius: 13px;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.45);
+}
+#timelineNavigation button.active .pointer::before{
+	background: #f8a3d3;
+	box-shadow: inset -4px -4px 11px #f14cad;
+}
+#timelineNavigation button::after,
+#timelineNavigation button::before{
+	content: '';
+	position: absolute;
+	-webkit-transform: scaleY(0.55);
+}
+#timelineNavigation button::after{
+	top: 19px;
+	right: -16px;
+	border: 9px solid transparent;
+	border-left-color: #f6f5f6;
+}
+#timelineNavigation button::before{
+	top: 18px;
+	right: -20px;
+	border: 10px solid transparent;
+	border-left-color: #dedfe0;
+}
+#timelineNavigation button.active::after{
+	border-left-color: #f388c0;
+	right: -17px;
+}
+#timelineNavigation button.active::before{
+	border-left-color: #f072b3;
+}
+#timelineNavigation button.jaydess{
+	background: #f5f5f7 url(../../content/img/timeline/home.png) 5px -71px no-repeat;
+	background-size: 53px auto;
+	width: 65px;
+	margin-left: 71px;
+}
+#timelineNavigation button.counselling{
+	margin: 0 162px 0 4px;
+}
+#timelineNavigation button.ease-of-placement{
+	margin: 0 165px 0 2px;
+	padding-right: 17px;
+}
+#timelineNavigation button.pain{
+	margin: 0 153px 0 53px;
+	padding-right: 18px;
+}
+#timelineNavigation button.post-placement{
+	margin: 0 132px 0 27px;
+}
+#timelineNavigation button.satisfaction{
+	margin: 0 103px 0 47px;
+}
+#timelineNavigation button.discontinuation{
+	margin: 0 71px 0 49px;
+	padding-right: 16px;
+}

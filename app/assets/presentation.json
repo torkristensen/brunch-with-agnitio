@@ -1,0 +1,406 @@
+{
+	"storyboard": ["jaydess_collection"],
+	"slides": {
+		"splash_page": {
+			"name": "Splash page",
+			"file": "splash_page.html"
+		},
+		"front_page": {
+			"name": "Front page",
+			"file": "front_page.html"
+		},
+		"profile_led": {
+			"name": "Profile led",
+			"file": "profile_led.html"
+		},
+		"imperfect_use": {
+			"name": "Imperfect use",
+			"file": "imperfect_use.html"
+		},
+		"switch_pills_us": {
+			"name": "Switch pills US",
+			"file": "switch_pills_us.html"
+		},
+		"failure_rates_perfect": {
+			"name": "Failure rates perfect",
+			"file": "failure_rates_perfect.html"
+		},
+		"unintended_pregnancy": {
+			"name": "Unintended pregnancy",
+			"file": "unintended_pregnancy.html"
+		},
+		"abortion": {
+			"name": "Abortion",
+			"file": "abortion.html"
+		},
+		"jaydess": {
+			"name": "Jaydess",
+			"file": "jaydess.html"
+		},
+		"jaydess_vs_mirena": {
+			"name": "Jaydess vs. Mirena",
+			"file": "jaydess_vs_mirena.html"
+		},
+		"jaydess_vs_mirena_popup_ultrasound": {
+			"name": "Jaydess vs. Mirena Popup Ultrasound",
+			"file": "jaydess_vs_mirena_popup_ultrasound.html"
+		},
+		"ease_of_placement": {
+			"name": "Ease of placement",
+			"file": "ease_of_placement.html"
+		},
+		"locally_acting": {
+			"name": "Locally acting",
+			"file": "locally_acting.html"
+		},
+		"profile_overview": {
+			"name": "Profile overview",
+			"file": "profile_overview.html"
+		},
+		"population": {
+			"name": "Population",
+			"file": "population.html"
+		},
+		"the_truth": {
+			"name": "The truth",
+			"file": "the_truth.html"
+		},
+		"unaware_of_iuc": {
+			"name": "Unaware of IUC",
+			"file": "unaware_of_iuc.html"
+		},
+		"efficacy": {
+			"name": "Efficacy",
+			"file": "efficacy.html"
+		},
+		"efficacy_popup": {
+			"name": "Efficacy Popup",
+			"file": "efficacy_popup.html"
+		},
+		"phase_study_design": {
+			"name": "Phase III study design",
+			"file": "phase_study_design.html"
+		},
+		"safety_overview": {
+			"name": "Safety overview",
+			"file": "safety_overview.html"
+		},
+		"favorable_profile": {
+			"name": "Favorable profile",
+			"file": "favorable_profile.html"
+		},
+		"ectopic_pregnancy": {
+			"name": "Ectopic pregnancy",
+			"file": "ectopic_pregnancy.html"
+		},
+		"pid": {
+			"name": "PID",
+			"file": "pid.html"
+		},
+		"expulsion_rates": {
+			"name": "Expulsion rates",
+			"file": "expulsion_rates.html"
+		},
+		"perforation_is_rare": {
+			"name": "Perforation is rare",
+			"file": "perforation_is_rare.html"
+		},
+		"day_90_reference": {
+			"name": "90-day reference",
+			"file": "day_90_reference.html"
+		},
+		"prolonged_bleeding": {
+			"name": "Prolonged bleeding",
+			"file": "prolonged_bleeding.html"
+		},
+		"amenorrhea": {
+			"name": "Amenorrhea",
+			"file": "amenorrhea.html"
+		},
+		"dysmenorrhea": {
+			"name": "Dysmenorrhea",
+			"file": "dysmenorrhea.html"
+		},
+		"timeline_jaydess": {
+			"name": "Timeline - Jaydess",
+			"file": "timeline_jaydess.html"
+		},
+		"timeline_counselling": {
+			"name": "Timeline - Counselling",
+			"file": "timeline_counselling.html"
+		},
+		"timeline_ease_of_placement": {
+			"name": "Timeline – Ease of placement",
+			"file": "timeline_ease_of_placement.html"
+		},
+		"timeline_pain": {
+			"name": "Timeline – Pain",
+			"file": "timeline_pain.html"
+		},
+		"timeline_post_placement": {
+			"name": "Timeline – Post placement",
+			"file": "timeline_post_placement.html"
+		},
+		"timeline_satisfaction": {
+			"name": "Timeline – Satisfaction",
+			"file": "timeline_satisfaction.html"
+		},
+		"timeline_discontinuation": {
+			"name": "Timeline – Discontinuation",
+			"file": "timeline_discontinuation.html"
+		},
+		"summary": {
+			"name": "Summary",
+			"file": "summary.html"
+		},
+		"builder": {
+			"name": "Toolbar - Builder",
+			"file": "builder.html"
+		},
+		"resources": {
+			"name": "Toolbar - Resources",
+			"file": "resources.html"
+		},
+		"smpc": {
+			"name": "Toolbar - Smpc",
+			"file": "smpc.html"
+		},
+		"faq": {
+			"name": "Toolbar - FAQ",
+			"file": "faq.html"
+		},
+		"faq_product_class": {
+			"name": "Toolbar - FAQ - Product class and licensed indication",
+			"file": "faq_product_class.html"
+		},
+		"faq_product_profile": {
+			"name": "Toolbar - FAQ - Clinical trials",
+			"file": "faq_product_profile.html"
+		},
+		"faq_efficacy": {
+			"name": "Toolbar - FAQ - Efficacy",
+			"file": "faq_efficacy.html"
+		},
+		"faq_safety_tolerability": {
+			"name": "Toolbar - FAQ - Safety and tolerability",
+			"file": "faq_safety_tolerability.html"
+		},
+		"faq_bleeding_profile": {
+			"name": "Toolbar - FAQ - Bleeding profile",
+			"file": "faq_bleeding_profile.html"
+		},
+		"faq_placement_removal": {
+			"name": "Toolbar - FAQ - Placement removal",
+			"file": "faq_placement_removal.html"
+		},
+		"faq_satisfaction": {
+			"name": "Toolbar - FAQ - Acceptability and satisfaction",
+			"file": "faq_satisfaction.html"
+		},
+		"counselling": {
+			"name": "Toolbar – Counselling/Training",
+			"file": "counselling.html"
+		},
+		"moa": {
+			"name": "Toolbar - MOA",
+			"file": "moa.html"
+		},
+		"uis_comparison": {
+			"name": "Toolbar - UIS comparison",
+			"file": "uis_comparison.html"
+		},
+		"cost": {
+			"name": "Toolbar - Cost",
+			"file": "cost.html"
+		},
+		"page_specific_reference_popup": {
+			"name": "page_specific_reference_popup",
+			"file": "page_specific_reference_popup.html"
+		},
+		"counselling_training_popup_1": {
+			"name": "counselling_training_popup_1",
+			"file": "counselling_training_popup_1.html"
+		},
+		"counselling_training_popup_2": {
+			"name": "counselling_training_popup_2",
+			"file": "counselling_training_popup_2.html"
+		},
+		"counselling_training_popup_3": {
+			"name": "counselling_training_popup_3",
+			"file": "counselling_training_popup_3.html"
+		},
+		"counselling_training_popup_4": {
+			"name": "counselling_training_popup_4",
+			"file": "counselling_training_popup_4.html"
+		},
+		"misperception": {
+			"name": "Peer pressure",
+			"file": "misperception.html"
+		},
+		"references": {
+			"name": "References",
+			"file": "references.html"
+		},
+		"profile_overview_22_year": {
+			"name": "22-year-old university student",
+			"file": "profile_overview_22_year.html"
+		},
+		"profile_overview_30_year": {
+			"name": "30-year-old mother, 8 months postpartum",
+			"file": "profile_overview_30_year.html"
+		}
+	},
+	"structures": {
+		"initial": {
+			"name": "",
+			"title": "Splash page",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["splash_page"]
+		},
+		"references":{
+			"name": "",
+			"title": "References",
+			"type": "slideshow",
+			"content": ["references"]
+		},
+		"initial_collection": {
+			"name": "",
+			"type": "collection",
+			"content": ["initial"]
+		},
+		"front_page": {
+			"name": "",
+			"title": "Front page",
+			"type": "slideshow",
+			"content": ["front_page", "profile_led", "misperception"]
+		},
+		"long_term_contraception": {
+			"name": "",
+			"builder": true,
+			"title": "Long-term<br/>contraception",
+			"type": "slideshow",
+			"content": ["imperfect_use", "switch_pills_us", "failure_rates_perfect", "unintended_pregnancy", "abortion"]
+		},
+		"jaydess": {
+			"name": "",
+			"builder": true,
+			"title": "Jaydess<sup>&reg;</sup>",
+			"type": "slideshow",
+			"content": ["jaydess", "jaydess_vs_mirena", "ease_of_placement", "locally_acting", "profile_overview"]
+		},
+		"suitability": {
+			"name": "",
+			"builder": true,
+			"title": "Suitability",
+			"type": "slideshow",
+			"content": ["population", "the_truth", "unaware_of_iuc"]
+		},
+		"efficacy": {
+			"name": "",
+			"builder": true,
+			"title": "Efficacy",
+			"type": "slideshow",
+			"content": ["efficacy", "phase_study_design"]
+		},
+		"safety": {
+			"name": "",
+			"builder": true,
+			"title": "Safety",
+			"type": "slideshow",
+			"content": ["safety_overview"]
+		},
+		"bleeding_profile": {
+			"name": "",
+			"builder": true,
+			"title": "Bleeding<br/>Profile",
+			"type": "slideshow",
+			"content": ["day_90_reference", "prolonged_bleeding", "amenorrhea", "dysmenorrhea"]
+		},
+		"placement_and_counselling": {
+			"name": "",
+			"builder": true,
+			"title": "Placement and<br/>Counselling",
+			"type": "slideshow",
+			"content": ["timeline_jaydess", "timeline_counselling", "timeline_ease_of_placement", "timeline_pain", "timeline_post_placement", "timeline_satisfaction", "timeline_discontinuation"]
+		},
+		"summary": {
+			"name": "",
+			"builder": true,
+			"title": "Summary",
+			"type": "slideshow",
+			"content": ["summary"]
+		},
+		"jaydess_collection": {
+			"name": "",
+			"type": "collection",
+			"content": [ "front_page", "long_term_contraception", "jaydess"]
+		},
+		"builder_slideshow": {
+			"name": "",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["builder"]
+		},
+		"resources_slideshow": {
+			"name": "",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["resources"]
+		},
+		"smpc_slideshow": {
+			"name": "",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["smpc"]
+		},
+		"faq_slideshow": {
+			"name": "",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["faq"]
+		},
+		"faq_slideshow_questions": {
+			"name": "",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["faq_product_class","faq_product_profile", "faq_efficacy", "faq_safety_tolerability","faq_bleeding_profile","faq_placement_removal","faq_satisfaction"]
+		},
+		"counselling_slideshow": {
+			"name": "",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["counselling"]
+		},
+		"moa_slideshow": {
+			"name": "",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["moa"]
+		},
+		"uis_comparison_slideshow": {
+			"name": "",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["uis_comparison"]
+		},
+		"cost_slideshow": {
+			"name": "",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["cost"]
+		},
+		"counselling_training_popups": {
+			"name": "",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["counselling_training_popup_1", "counselling_training_popup_2", "counselling_training_popup_3", "counselling_training_popup_4"]
+		},
+		"sandbox": {
+			"name": "",
+			"ignore": ["menu", "thumbs"],
+			"type": "slideshow",
+			"content": ["page_specific_reference_popup"]
+		}
+	}
+}

@@ -1,0 +1,136 @@
+#toolbar{
+	position: absolute;
+	bottom: 0;
+	width: 1024px;
+	height: 680px;
+	background: #f6f6f6;
+	-webkit-transition: -webkit-transform 100ms linear;
+	-webkit-user-select: none;
+	-webkit-transform: translate3d(0, 100%, 0);
+	z-index: 3;
+}
+#toolbar.visible{
+	z-index: 5;
+	-webkit-transform: translate3d(0, 617px, 0);
+}
+#toolbar.expanded{
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#toolbar .navigation-handler{
+	bottom: 100%;
+	background: url('../../content/img/navigation-toolbar/handler-rotated.png') no-repeat;
+}
+#toolbar.visible .navigation-handler::after,
+#toolbar .navigation-handler::after{
+	-webkit-transform: rotate(180deg) translate(-50%, -50%);
+}
+#toolbar.expanded .navigation-handler::after{
+	-webkit-transform: translate(-50%, -50%);
+}
+#toolbar .product-logo{
+	top: 16px;
+	left: 13px;
+}
+#toolbar.expanded .product-logo{
+	top: 6px;
+}
+.toolbar-navigation{
+	float: right;
+	height: 64px;
+}
+/* TODO: Implement icons */
+.toolbar-icon{
+	background: url('../../content/img/navigation-toolbar/toolbar-nav-sprite.png') no-repeat;
+	background-size: 100%;
+}
+.toolbar-icon.builder{
+	width: 30px;
+	height: 30px;
+	background-position: 0 0;
+}
+.toolbar-icon.resources{
+	width: 30px;
+	height: 30px;
+	background-position: 0 0;
+}
+.toolbar-icon.smpc{
+	width: 30px;
+	height: 30px;
+	background-position: 0 0;
+}
+.toolbar-icon.faq{
+	width: 30px;
+	height: 30px;
+	background-position: 0 0;
+}
+.toolbar-icon.counselling{
+	width: 30px;
+	height: 30px;
+	background-position: 0 0;
+}
+.toolbar-icon.moa{
+	width: 30px;
+	height: 30px;
+	background-position: 0 0;
+}
+.toolbar-icon.uis_comparison{
+	width: 30px;
+	height: 30px;
+	background-position: 0 0;
+}
+.toolbar-icon.cost{
+	width: 30px;
+	height: 30px;
+	background-position: 0 0;
+}
+
+.toolbar-navigation button{
+	float: left;
+	width: 64px;
+	height: inherit;
+	padding-bottom: 10px;
+	border-left: 1px solid #ededed;
+	background: url('../../content/img/navigation-toolbar/toolbar-nav-sprite.png') no-repeat;
+	background-position-y: 8px, 0;
+	font: normal 12px/1em BryantPro;
+	color: #231f20;
+	-webkit-box-align: end;
+}
+.toolbar-navigation button.active{
+	background: url('../../content/img/navigation-toolbar/toolbar-nav-sprite.png') no-repeat, url('../../content/img/navigation-toolbar/toolbar-active-button.png') no-repeat;
+	background-position-y: -70px, 0 !important;
+	color: #ec008c;
+}
+.toolbar-navigation button:first-child{
+	background-position: 12px 0, 0 0;
+	background-size: 450px, auto;
+}
+.toolbar-navigation button:nth-child(2){
+	background-position: -47px 2px, 0;
+	background-size: 448px, auto;
+}
+.toolbar-navigation button:nth-child(3){
+	background-position: -105px 0, 0 0;
+	background-size: 454px, auto;
+}
+.toolbar-navigation button:nth-child(4){
+	background-position: -164px 0, 0 0;
+	background-size: 456px, auto;
+}
+.toolbar-navigation button:nth-child(5){
+	background-position: -219px 0, 0 0;
+	background-size: 450px, auto;
+}
+.toolbar-navigation button:nth-child(6){
+	background-position: -277px 0, 0 0;
+	background-size: 450px, auto;
+}
+.toolbar-navigation button:nth-child(7){
+	padding-bottom: 3px;
+	background-position: -334px 0, 0 0;
+	background-size: 450px, auto;
+}
+.toolbar-navigation button:last-child{
+	background-position: -394px 0, 0 0;
+	background-size: 453px, auto;
+}

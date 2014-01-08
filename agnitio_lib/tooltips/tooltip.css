@@ -1,0 +1,8 @@
+.tooltip{
+	position: absolute;
+	display: none;
+	-webkit-box-sizing: border-box;
+}
+.tooltip.active{
+	display: block;
+}

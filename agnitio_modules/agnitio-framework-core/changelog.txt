@@ -1,0 +1,142 @@
+Change log
+
+--------------------------
+Version 2.3.2 2012-10-01
+--------------------------
+Updated agnitio.js and analytics module.
+
+agnitio.js updated to version 1.1
+agnitio.js added to viewer/js folder
+Analytics module updated to include slideIndex when saving slides
+Documentation of analytics module has been updated with more (and better) examples
+Data module was removed
+Demo of dynamic agenda was removed because of buggy behaviour. Will be included again in a future release
+Included PDF "HTML5 Framework Documentation" was updated to reflect latest updates
+
+--------------------------
+Version 2.3.1 2012-07-17
+--------------------------
+Hotfix.
+
+Added a missing instruction in release_notes.pdf
+Updated analytics.js so that init can be called with no paramters
+
+--------------------------
+Version 2.3 2012-07-13
+--------------------------
+This release includes the new Agnitio Content API and analytics module.
+
+The analytics module will use the new Agnitio Content API to automatically collect the data for the Agnitio Standard Analytics application soon being released.
+
+Updated to version 2.3
+Added app.getPath API method
+Added analytics module
+Added agnitio.js to library folder
+Updated references to JS files in index.html
+Updated to latest versions of libraries (touchy, draggy, util)
+Parent property added to all content (collections/slideshows/slides)
+
+--------------------------
+Version 2.2 2012-05-14
+--------------------------
+This release includes a major change to inline slideshows:
+
+Functionality for embedding slideshows in slides are now implemented within the Slideshow module. The app.inline API property and the inline custom events have been removed as they are no longer used. Documentation for how to embed slideshows have been added to the API docs under 'Core: Slideshow'.
+
+Updated to version 2.2
+Added app.slideshow.embed API method
+Added app.slideshow.removeEmbedded method
+Removed app.inline API property
+Removed inline slideshow custom events
+Several fixes to AutoMenu core module
+API documentation added for AutoMenu module
+Several fixes to Menu module
+Demo presentation has been updated with new content and above changes
+Added Dynamic Collection Agenda module
+Added Dynamic Collection Agenda to demo presentation
+app.goTo API method has been improved (bug fix)
+Removed some console.logs used for debugging
+Added link to official Draggy documentation
+Added introductory documentation for util.js library file
+Slide events are now properly removed from last slide viewed in a collection
+Slide elements are now properly cleaned up from last slide viewed in a collection 
+Updated app.removeEvents API to accept slide parameter
+Updated app.removeElements API to accept slide parameter
+GitHub issue #3 fixed (Memory Manager will not remove custom classes from slide element)
+
+--------------------------
+Version 2.1 2012-02-14
+--------------------------
+This release includes two major features to help developers build performant presentations:
+
+An API method to be used when adding event listeners in slides. When used developers don't need to manually clean up the event listeners when exiting the slides, the framework will take care of it.
+A convention and functionality for finding and caching elements in slides. When used developers don't need to manually set the element reference to 'null' when exiting the slide.
+The features have been documented in the API docs under 'Core: Presentation' and 'Core: Slideshow' respectively.
+
+Updated version to 2.1
+Added app.addEvent API method
+Added slide elements convention and functionality
+Update Demo presentation with thumbnails
+Udated Demo presentation to use above additions
+Overall style and stability updates to Demo presentation
+Updated documentation for added functionality
+Draggy library updated to version 0.6
+Added draggy.js to Blank/index.html
+Bug fix: app.init() not always working properly when called with no parameters
+
+--------------------------
+Version 2.0.1 2012-01-31
+--------------------------
+Updated version to 2.0.1
+Resize module improved for iPad
+Small updates to slideshow.css
+Updated burbing_effect to burping_effect in Demo
+Added more comments to Dynamic Agenda module
+Reverted Demo to use old monitoring API
+Bug fix: onExit properly called when using app.goTo
+
+--------------------------
+Version 2.0 2012-01-19
+--------------------------
+Core updates
+
+Removed slideWrap div (now an option to new Presentation)
+Activate "Memory Manager" by setting manageMemory: true as config option to new Presentation
+Added JSON presentation type, for reading presentation structure from JSON file
+Added appError custom event
+Added app.init API method
+Added app.show API method
+Added app.template API method
+Added app.dimensions API property
+Added core module: View
+Missing slides handled by inserting error slides
+Missing structures handled by inserting error slide
+Updated file organization
+Type is no longer required when calling app.load
+Added skipScroll parameter to app.load
+Presentation setup moved to setup.js file
+URL search functionality for debugging, i.e. ?slide=efficacy
+app.version updated to 2.0
+Module updates
+
+Menu module much improved with scrolling, offset, and tracking
+AutoMenu module added
+DynamicAgenda module added
+Resize module added (for dual orientation presentations)
+Loading indicator module added
+Versioning added to modules
+Bundled libraries
+
+touchy.js improved (including possibility to stop the custom events)
+draggy.js added, a library for dragging objects and creating sliders
+util.js added, utility functions
+Bugs fixed
+
+Always calling onExit on first slide in section when scrolling (even if active slide is #2)
+Don't need to assign a slide to slideshow up front to use it dynamically later
+Various smaller fixes
+Other
+
+Added demo app
+API documentation updated
+Framework documentation included

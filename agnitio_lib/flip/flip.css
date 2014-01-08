@@ -1,0 +1,33 @@
+.flip-container{
+	position: relative;
+}
+.flip-container.preserved{
+	-webkit-transform-style: preserve-3d;
+}
+.flip-container .side{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: 1s;
+}
+.flip-container.rotate-y .side.back{
+	-webkit-transform: translate3d(0, 0, 0) rotateY(180deg);
+}
+.flip-container.rotate-y.flipped .side.front{
+	-webkit-transform: translate3d(0, 0, 0) rotateY(180deg);
+}
+.flip-container.rotate-y.flipped .side.back{
+	-webkit-transform: translate3d(0, 0, 0) rotateY(360deg);
+}
+.flip-container.rotate-x .side.back{
+	-webkit-transform: translate3d(0, 0, 0) rotateX(180deg);
+}
+.flip-container.rotate-x.flipped .side.front{
+	-webkit-transform: translate3d(0, 0, 0) rotateX(180deg);
+}
+.flip-container.rotate-x.flipped .side.back{
+	-webkit-transform: translate3d(0, 0, 0) rotateX(360deg);
+}

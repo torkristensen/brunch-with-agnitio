@@ -1,0 +1,14 @@
+.slide-popup{
+	background-color: #fff;
+	position: absolute;
+	top: 50px;
+	opacity: 0;
+	-webkit-transition: opacity 1s;
+	pointer-events: none;
+}
+.slide-popup.displaying{
+	margin: 0;
+	overflow: hidden;
+	opacity: 1;
+	pointer-events: auto;
+}

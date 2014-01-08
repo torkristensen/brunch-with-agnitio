@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+	<title>Bayer Jaydess</title>
+	<link rel="stylesheet" href="all.css">
+</head>
+<body>
+	<div id="presentation">
+		<menu id="mainmenu">
+			<button data-toggle="mainmenu visible" data-switch-off="toolbar expanded" class="navigation-handler"></button>
+			<div id="thumbs"></div>
+		</menu>
+		<div id="toolbar">
+			<button data-toggle="toolbar visible" data-switch-off="toolbar expanded" class="navigation-handler"></button>
+
+			<button class="product-logo"></button>
+			<menu class="toolbar-navigation" data-switch-off="mainmenu visible" data-menu>
+				<button data-toolbar-open="builder_slideshow">Builder</button>
+				<button data-toolbar-open="resources_slideshow">Resources</button>
+				<button data-toolbar-open="smpc_slideshow">SmPC</button>
+				<button data-toolbar-open="faq_slideshow">FAQ</button>
+				<button data-toolbar-open="counselling_slideshow">Counseling</button>
+				<button data-toolbar-open="moa_slideshow">MoA</button>
+				<button data-toolbar-open="uis_comparison_slideshow">IUS comparison</button>
+				<button data-toolbar-open="cost_slideshow">Cost</button>
+			</menu>
+			<div id="toolbarSlideshow"></div>
+		</div>
+		<div class="overlay" id="storyflowPopup" data-bind="css: { visible: saveStoryflowMode }">
+			<div class="popup" id="storyflowName" data-bind="css: { visible: isActivePopup('save') }">
+				<h1>
+					<img src="content/img/builder/warning-icon-name.png">
+					Save customized Story Flow
+				</h1>
+				<div>
+					<label>Presentation name</label>
+					<input type="text" data-bind="value: newStoryflowName, valueUpdate: 'keydown', limitCharacters: 20">
+				</div>
+				<button data-bind="event: { tap: saveStoryflow }" data-switch-off="storyflowName visible" data-switch-on="storyflowSuccess visible" data-remove-on-delay="storyflowPopup visible" data-blur>Save</button>
+			</div>
+			<div class="popup" id="storyflowSuccess" data-bind="event: { tap: closeSuccessPopup }, css: { visible: isActivePopup('success') }">
+				<h1>
+					<img src="content/img/builder/success-icon-name.png">
+					Thanks!<br> Customized Story Flow<br> is now saved
+				</h1>
+				<dl>
+					<dt>Name:&nbsp;</dt>
+					<dd data-bind="text: savedName"></dd>
+					<dt>Date:&nbsp;</dt>
+					<dd data-bind="text: date"></dd>
+				</dl>
+			</div>
+		</div>
+		<img src="content/img/bayer-logo.png" class="bayer-logo" id="bayerLogoButton" />
+		<button class="product-logo" id="specificReferences" data-popup="popup,page_specific_reference_popup"></button>
+		<div id="indicators" class="indicators"></div>
+		<section id="slideshows" class="slideshows"></section>
+		<div id="popup" class="slide-popup"></div>
+		<div id="slidePopup" class="slide-popup"></div>
+		<div id="popupCloseButton"></div>
+		<div class="shadow-box">
+			<div class="video-container"></div>
+		</div>
+		<footer id="mainfooter"></footer>
+		<menu id="timelineNavigation">
+			<button class="jaydess" data-href="jaydess_collection/placement_and_counselling/timeline_jaydess">
+				<span class="pointer"></span>
+			</button>
+			<button class="counselling" data-href="jaydess_collection/placement_and_counselling/timeline_counselling">
+				Counseling
+				<span class="pointer"></span>
+			</button>
+			<button class="ease-of-placement" data-href="jaydess_collection/placement_and_counselling/timeline_ease_of_placement">
+				Ease of<br/>
+				placement
+				<span class="pointer"></span>
+			</button>
+			<button class="pain" data-href="jaydess_collection/placement_and_counselling/timeline_pain">
+				Pain
+				<span class="pointer"></span>
+			</button>
+			<button class="post-placement" data-href="jaydess_collection/placement_and_counselling/timeline_post_placement">
+				Post<br/>
+				placement
+				<span class="pointer"></span>
+			</button>
+			<button class="satisfaction" data-href="jaydess_collection/placement_and_counselling/timeline_satisfaction">
+				Satisfaction
+				<span class="pointer"></span>
+			</button>
+			<button class="discontinuation" data-href="jaydess_collection/placement_and_counselling/timeline_discontinuation">
+				Discontinuation<span class="pointer"></span>
+			</button>
+		</menu>
+	</div>
+
+	<!-- FRAMEWORK AND LIBRARIES -->
+	<script src="_framework/lib/agnitio.js"></script>
+	<script src="_framework/lib/touchy.js"></script>
+	<script src="_framework/lib/draggy.js"></script>
+	<script src="_framework/lib/util.js"></script>
+	<script src="_framework/core.js"></script>
+
+	<!-- ADDITIONAL LIBRARIES -->
+	<script src="code/js/libraries/utils.js"></script>
+	<script src="code/js/libraries/expand.js"></script>
+	<script src="code/js/libraries/content-scroller.js"></script>
+	<script src="code/js/libraries/slider.js"></script>
+	<script src="code/js/libraries/shake.js"></script>
+	<script src="code/js/libraries/scroller.js"></script>
+	<script src="code/js/libraries/hold.js"></script>
+
+	<!-- THIRD PARTY LIBRARIES -->
+	<script src="code/js/libraries/knockout-2.2.0.js"></script>
+	<!-- ADDED BY TKR -->
+	<!-- THIRD PARTY LIBRARIES -->	
+	<script src="code/js/underscore.js"></script>
+	<script src="code/js/i18n.js"></script>
+	<script src="code/js/translations.js" type="text/javascript" charset="utf-8"></script>
+	<!-- PLUG-INS -->
+	<script src="code/js/libraries/knockout.handlers.js"></script>
+
+	<!-- MODULES -->
+	<script src="modules/multidrag/util.js"></script>
+	<script src="modules/multidrag/point.js"></script>
+	<script src="modules/multidrag/bound.js"></script>
+	<script src="modules/multidrag/positioning.js"></script>
+	<script src="modules/multidrag/obj.js"></script>
+	<script src="modules/multidrag/list.js"></script>
+	<script src="modules/multidrag/listswitcher.js"></script>
+	<script src="modules/multidrag/spider.js"></script>
+	<script src="modules/multidrag/target.js"></script>
+	<script src="modules/multidrag/targetManager.js"></script>
+	<script src="modules/analytics/analytics.js"></script>
+	<script src="modules/monitoring/monitoring.js"></script>
+	<script src="modules/indicators/indicators.js"></script>
+	<script src="modules/binding/binding.js"></script>
+	<script src="modules/menu/menu.js"></script>
+	<script src="modules/thumbs/thumbs.js"></script>
+	<script src="modules/toolbar/toolbar.js"></script>
+	<script src="modules/tooltips/tooltip.js"></script>
+	<script src="modules/animation/animation.js"></script>
+	<script src="modules/slide-popup/slide-popup.js"></script>
+	<script src="modules/flip/flip.js"></script>
+	<script src="modules/coverscroll/coverscroll.js"></script>
+	<script src="modules/timeline/timeline.js"></script>
+	<script src="modules/stop-scroll/stop-scroll.js"></script>
+
+	<!-- CUSTOM APP JAVASCRIPT, ADD YOUR JAVASCRIPT HERE! -->
+	<script src="code/js/pinch-event.js"></script>
+	<script src="code/js/canvas_slider.js"></script>
+	<script src="code/js/canvas_draw_functions.js"></script>
+	<script src="code/js/abortion.js"></script>
+	<script src="code/js/unintended_pregnancy.js"></script>
+	<script src="code/js/unaware_of_iuc.js"></script>
+	<script src="code/js/misperception.js"></script>
+	<script src="code/js/profile_led.js"></script>
+	<script src="code/js/storage.js"></script>
+	<script src="code/js/jaydess_vs_mirena.js"></script>
+	<script src="code/js/section-controll.js"></script>
+	<script src="code/js/splash_page.js"></script>
+	<script src="code/js/failure_rates_perfect.js"></script>
+	<script src="code/js/timeline_pain.js"></script>
+	<script src="code/js/the_truth.js"></script>
+	<script src="code/js/phase_study_design.js"></script>
+	<script src="code/js/profile_overview.js"></script>
+	<script src="code/js/faq.js"></script>
+	<script src="code/js/references.js"></script>
+	<script src="code/js/page_specific_reference_popup.js"></script>
+	<script src="code/js/cost.js"></script>
+	<script src="code/js/counselling_training_popup_2.js"></script>
+	<script src="code/js/counselling_training_popup_4.js"></script>
+	<script src="code/js/bayer_logo.js"></script>
+
+	<!-- dynamic agenda scripts -->
+	<script src="code/js/builder-handlers.js"></script>
+	<script src="code/js/builder-viewmodel.js"></script>
+	<script src="code/js/builder-loader.js"></script>
+
+	<!-- shopping cart scripts -->
+	<script src="code/js/resources-viewmodel.js"></script>
+
+	<!-- APP SETUP -->
+	<script src="setup.js"></script>
+</body>
+</html>

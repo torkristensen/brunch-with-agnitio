@@ -1,0 +1,10 @@
+.cover-scroll{
+	width: 0;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+}
+.cover-item{
+	position: absolute;
+	-webkit-transition-duration: 600ms;
+}
